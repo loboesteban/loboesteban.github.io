@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #000000;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    height:85vh ;
+}
+
+.div_form {
+    width: 100%;
+    height: 100%;
+    background: #00000084;
+    box-shadow: inset 0.1rem 0 1rem 0  rgba(46, 45, 45, 0.5);
+}
+
+.container_form{
+    height: 94%;
+    margin: 3%;
+    background: rgb(0, 0, 0);
+    width: 90%;
+}
+
+.logo_bla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 10%;
+    width: 10%;
+    
+}
+
+.logo_bla img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+}
+
+.header_right {
+    width: 90%;
+    height: 100%;
+    background-image: url(pexels-wendy-wei-1306791.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+.header_right img {
+    width: 30%;
+    filter: drop-shadow(-2px 2px 15px rgba(246, 244, 244, 0.7));
+}
+
+.fon_ani{
+    margin-top: 10px;
+    position: relative;
+    width: 70%;
+    height: 30%;
+    background-color: #000000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fon_ani::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -8%;
+    width: 60%;
+    height: 46px;
+    background: linear-gradient(0deg, transparent, #300ef0, #300ef0);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.fon_ani::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -8%;
+    width: 60%;
+    height: 46px;
+    background: linear-gradient(0deg, transparent, #f00e0e, #f00e0e);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+ }
+
+ @keyframes animate {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+ }
+
+ .fondo{
+    position: absolute;
+    inset: 3px;
+    border-radius: 15px;
+    background: transparent;
+    z-index: 10;
+}
+
+
+.fondo video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.numzx {
+    background-color: #300ef0;
+    width: 100%;
+    height: 100px;
+}
+
+.num{
+    width: 100%;
+    height:60%;
+    margin-top: 10px;
+}
+
+.num h1 {
+    font-family: 'Lemon', cursive;
+    font-size: 40px; 
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    font-family: 'Lemon', cursive;
+    font-size: 45px;
+    filter: drop-shadow(-2px -1px 1px rgb(255, 255, 255));
+    background: linear-gradient(90deg,#300ef0, #f00e0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+
+
+.num p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 17px;
+    margin-right: 60px;
+}
+
+.fond{
+    width: 100%;
+    height: 30%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    background: #000000;
+    border-radius: 25px;
+    border: none;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+
+  .button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #300ef0 0%, #f00e0e 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .button:hover::before {
+    width: 100%;
+   }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .fond a {
+    border-radius: 25px;
+    ;
+  }
+
+footer{
+   background-color:#000000; 
+   text-align:center; 
+   padding-bottom: 2rem;
+   padding-top: 1rem;
+   font-size: 1rem;
+}
+
+footer div {
+    margin: 1%;
+}
+
+footer a {
+    padding-right: 20px;
+}
+
+
+footer div a, p{
+    color: aliceblue;
+}
+/* ================= table ================== */
+@media  screen and (max-width: 1035px){
+
+}
+
+/* ================= telefono ================== */
+
+@media  screen and (max-width: 600px) {
+    
+}
